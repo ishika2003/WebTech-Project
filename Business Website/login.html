@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Traders Palace</title>
+    <style>
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/stock.jpg");
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: calc(100% - 42px);
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding-left: 35px;
+            background-image: url('https://img.icons8.com/material-outlined/24/000000/user-male-circle--v1.png');
+            background-repeat: no-repeat;
+            background-position: 8px 50%;
+            background-size: 20px;
+        }
+
+        .input-group input.password {
+            background-image: url('https://img.icons8.com/material-outlined/24/000000/lock--v1.png');
+        }
+
+        .input-group input::placeholder {
+            color: transparent; 
+        }
+
+        .input-group input:focus::placeholder {
+            color: #ccc; 
+        }
+
+        .input-group input:focus {
+            outline: none; 
+        }
+
+        button[type="submit"] {
+            background: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: calc(100% - 42px); 
+        }
+
+        button[type="submit"]:hover {
+            background: #d32f2f;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p a {
+            color: #f44336;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-home a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .back-home a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="container">
+        <div class="logo">
+            <img src="../img/weblogo2-removebg-preview.png" alt="Traders Palace Logo">
+        </div>
+        <form action="#" method="POST">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username" hidden>Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password" hidden>Password</label>
+                <input type="password" id="password" name="password" class="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="registration.html">Register here</a></p>
+            <div class="back-home">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

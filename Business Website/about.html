@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traders Palace - About Us</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./img/weblogo2-removebg-preview.png" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>About Us</h1>
+            <section class="about">
+                <p>
+                    Traders Palace is a leading platform for individuals interested in learning about trading and investing in financial markets. Our mission is to empower traders with knowledge and skills to make informed decisions and achieve financial success.
+                </p>
+                <p>
+                    At Traders Palace, we offer a range of free online courses covering various aspects of trading, including candlestick charts, stop loss strategies, and different types of analysis. Our courses are designed to cater to traders of all levels, from beginners to experienced professionals.
+                </p>
+                <p>
+                    Our team consists of seasoned traders and financial experts who are dedicated to providing valuable insights and guidance to our community. Whether you're looking to build a solid trading foundation or enhance your existing skills, Traders Palace is here to support you on your journey to becoming a successful trader.
+                </p>
+                
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-telegram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

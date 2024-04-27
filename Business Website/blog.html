@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Traders Palace - Blog</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="./img/weblogo2-removebg-preview.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>World's Biggest University of Traders</h1>
+        <p>
+          “The stock market is a device to transfer money from the impatient to
+          the patient.”<br />
+          ~Warren Buffett
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+
+    <section class="blog">
+      <div class="row">
+        <div class="blog-col">
+          <h3>Top 5 Trading Strategies Every Trader Should Know</h3>
+          <img src="./img/blog1.jpg" />
+          <p>
+            The world of trading can be exciting and lucrative, but it also
+            carries inherent risks. Understanding and employing effective
+            trading strategies is crucial for navigating the markets and
+            potentially achieving your financial goals. Here's a breakdown of
+            the top 5 trading strategies every trader should be familiar with:
+          </p>
+          <a href="#" class="hero-btn">Read More</a>
+        </div>
+        <div class="blog-col">
+          <h3>Understanding Candlestick Patterns in Trading</h3>
+          <img src="./img/blog2.jpg" />
+          <p>
+            Technical analysis is a widely used approach in trading that
+            involves studying historical price data to identify potential future
+            market movements. Candlestick charts, with their visually appealing
+            bars, are a popular tool for technical analysis. But what exactly do
+            those candlesticks tell us? This guide will delve into the world of
+            candlestick patterns and how they can inform your trading decisions.
+          </p>
+          <a href="#" class="hero-btn">Read More</a>
+        </div>
+        <div class="blog-col">
+          <h3>Risk Management Strategies for Traders</h3>
+          <img src="./img/blog3.jpg" />
+          <p>
+            The thrill of potential profits can be intoxicating in the world of
+            trading. But without proper risk management, those profits can
+            quickly evaporate. Just like having a fire extinguisher is crucial
+            in any building, a robust risk management plan is essential for
+            every trader. This guide will equip you with key strategies to
+            navigate the markets and protect your capital.
+          </p>
+          <a href="#" class="hero-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="footers">
+      <h4>About Us</h4>
+      <p>
+        We help you to invest your money, create a Portfolio <br />
+        and be Rich. We are here for you!
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </section>
+
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

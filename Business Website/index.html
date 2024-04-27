@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Traders Palace</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppinsrfffffffffffffffffffffffght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="./img/weblogo2-removebg-preview.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>World's Biggest University of Traders</h1>
+        <p>
+          “The stock market is a device to transfer money from the impatient to
+          the patient.”<br />
+          ~Warren Buffett
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>Courses we give for free.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>CANDLE CHARTS</h3>
+          <p>
+            Candlestick charts are a type of financial chart used to represent
+            the price movements of a security, derivative, or currency. They
+            provide more information than traditional line charts, as they
+            display the open, high, low, and close prices for a given time
+            period
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>STOP LOSS</h3>
+          <p>
+            A stop-loss order is a risk management tool used by traders and
+            investors to limit potential losses on a position in a financial
+            asset. It is an order placed with a broker or trading platform to
+            sell a security when it reaches a certain predetermined price level.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>ANALYSIS</h3>
+          <p>
+            Fundamental Analysis,Technical Analysis,Sentiment
+            Analysis,Quantitative Analysis,Macro Analysis
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="campus">
+      <div class="row">
+        <div class="campus-col">
+          <img src="./img/candlestick.svg" />
+          <div class="layer">
+            <h3>CHART</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="./img/stoploss.png" />
+          <div class="layer">
+            <h3>STOP LOSS</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="./img/analysis2.png" />
+          <div class="layer">
+            <h3>ANALYSIS</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h1>Enroll In Our Various Online Courses</h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <section class="footers">
+      <h4>About Us</h4>
+      <p>
+        We help you to invest your money, create a Portfolio <br />
+        and be Rich. We are here for you!
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
